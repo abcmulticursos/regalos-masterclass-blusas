@@ -47,17 +47,15 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
 
-    /* Contenedor para la flecha */
     .flecha-container {
         margin: 20px 0;
-        width: 60px; /* Ajusta el tamaño de la flecha aquí */
+        width: 60px;
     }
     .flecha-container img {
         width: 100%;
         height: auto;
     }
 
-    /* --- ESTILOS PARA LOS RECUADROS DE TEXTO --- */
     .text-rectangle {
         background-color: #f3f0f0;
         border-radius: 10px;
@@ -74,7 +72,6 @@
         font-weight: bold;
     }
 
-    /* --- BOTÓN DE DESCARGA CON EFECTO PULSAR --- */
     .download-button {
         display: inline-block;
         background-color: #25D366;
@@ -92,36 +89,23 @@
         transition: transform 0.2s;
         border: none;
         cursor: pointer;
-        animation: pulse-animation 2s infinite; /* Activa el efecto pulsar */
+        animation: pulse-animation 2s infinite;
     }
 
-    /* Definición de la animación Pulsar */
     @keyframes pulse-animation {
-        0% {
-            transform: scale(1);
-            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
-        }
-        70% {
-            transform: scale(1.05);
-            box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
-        }
-        100% {
-            transform: scale(1);
-            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
-        }
+        0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+        70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+        100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
     }
 
-    .download-button:hover {
-        background-color: #1eb956;
-    }
-
+    .download-button:hover { background-color: #1eb956; }
 </style>
 </head>
 <body>
 
 <div class="main-container">
     <div class="welcome-image-container">
-        <img src="images/pagina-de-obsequios-blusas.jpg" alt="Obsequios">
+        <img src="images/pagina-de-obsequios-blusas.jpg" alt="Obsequios Blusas">
     </div>
 
     <div class="text-rectangle large">
@@ -129,10 +113,10 @@
     </div>
 
     <div class="flecha-container">
-        <img src="images/flechita-abajo.png" alt="Flecha hacia abajo">
+        <img src="images/flechita-hacia-abajo.png" alt="Flecha">
     </div>
 
-    <a href="TU_LINK_DE_DESCARGA_AQUI" class="download-button">
+    <a href="AQUÍ_VA_TU_ENLACE" class="download-button">
         TOCA PARA DESCARGAR TUS OBSEQUIOS
     </a>
 </div>
