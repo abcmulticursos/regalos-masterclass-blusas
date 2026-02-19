@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descarga tus obsequios</title>
+<style>
+    /* --- ESTILOS GENERALES --- */
+    html, body {
+        min-height: 100%;
+    }
+
+    body {
+        background-image: linear-gradient(to bottom, #c021f9, #f92e91);
+        background-attachment: fixed;
+        color: white;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px 2.5mm;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
+
+    .main-container {
+        max-width: 600px;
+        width: 100%;
+        background-color: transparent;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* --- ESTILOS PARA LAS IMÁGENES --- */
+    .welcome-image-container {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .welcome-image-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 17px;
+        display: block;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Contenedor para la flecha */
+    .flecha-container {
+        margin: 20px 0;
+        width: 60px; /* Ajusta el tamaño de la flecha aquí */
+    }
+    .flecha-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* --- ESTILOS PARA LOS RECUADROS DE TEXTO --- */
+    .text-rectangle {
+        background-color: #f3f0f0;
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 10px;
+        text-align: center;
+        color: black;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .text-rectangle.large {
+        font-size: 23pt;
+        font-weight: bold;
+    }
+
+    /* --- BOTÓN DE DESCARGA CON EFECTO PULSAR --- */
+    .download-button {
+        display: inline-block;
+        background-color: #25D366;
+        color: white;
+        padding: 20px 30px;
+        text-decoration: none;
+        border-radius: 50px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        width: 90%;
+        max-width: 400px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        margin-top: 10px;
+        transition: transform 0.2s;
+        border: none;
+        cursor: pointer;
+        animation: pulse-animation 2s infinite; /* Activa el efecto pulsar */
+    }
+
+    /* Definición de la animación Pulsar */
+    @keyframes pulse-animation {
+        0% {
+            transform: scale(1);
+            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+        }
+        70% {
+            transform: scale(1.05);
+            box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+        }
+        100% {
+            transform: scale(1);
+            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+        }
+    }
+
+    .download-button:hover {
+        background-color: #1eb956;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="main-container">
+    <div class="welcome-image-container">
+        <img src="images/isabel-villagomez-pagina-002-preguntas-clase-1.jpg" alt="Obsequios">
+    </div>
+
+    <div class="text-rectangle large">
+        🎁 Descarga tus obsequios por tu participación
+    </div>
+
+    <div class="flecha-container">
+        <img src="images/flechita-hacia-abajo.png" alt="Flecha hacia abajo">
+    </div>
+
+    <a href="TU_LINK_DE_DESCARGA_AQUI" class="download-button">
+        TOCA PARA DESCARGAR TUS OBSEQUIOS
+    </a>
+</div>
+
+</body>
+</html>
