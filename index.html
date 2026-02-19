@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Descarga tus obsequios</title>
+
+    <meta property="og:title" content="🎁 Descarga tus obsequios">
+    <meta property="og:description" content="Toca para descargar tus materiales de regalo.">
+    <meta property="og:image" content="https://tu-pagina.netlify.app/images/miniatura-pagina-regalos-blusas.jpg">
+    <meta property="og:type" content="website">
+
 <style>
     /* Estilos base */
     html, body { min-height: 100%; }
@@ -37,6 +43,7 @@
     }
     .flecha-container { margin: 20px 0; width: 60px; }
     .flecha-container img { width: 100%; height: auto; }
+    
     .text-rectangle {
         background-color: #f3f0f0;
         border-radius: 10px;
@@ -48,10 +55,12 @@
         font-size: 20pt;
         font-weight: bold;
     }
+
+    /* BOTÓN MODIFICADO A AMARILLO (12% Magenta, 100% Amarillo) */
     .download-button {
         display: inline-block;
-        background-color: #25D366;
-        color: white;
+        background-color: #ffe100; /* El color resultante */
+        color: black; /* Texto negro para que resalte sobre el amarillo */
         padding: 20px 30px;
         text-decoration: none;
         border-radius: 50px;
@@ -62,10 +71,11 @@
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         animation: pulse-animation 2s infinite;
     }
+
     @keyframes pulse-animation {
-        0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-        70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
-        100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 225, 0, 0.7); }
+        70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(255, 225, 0, 0); }
+        100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 225, 0, 0); }
     }
 </style>
 </head>
