@@ -5,11 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Descarga tus obsequios</title>
 <style>
-    /* --- ESTILOS GENERALES --- */
-    html, body {
-        min-height: 100%;
-    }
-
+    /* Estilos base */
+    html, body { min-height: 100%; }
     body {
         background-image: linear-gradient(to bottom, #c021f9, #f92e91);
         background-attachment: fixed;
@@ -23,55 +20,34 @@
         min-height: 100vh;
         box-sizing: border-box;
     }
-
     .main-container {
         max-width: 600px;
         width: 100%;
-        background-color: transparent;
         text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
-    /* --- ESTILOS PARA LAS IMÁGENES --- */
-    .welcome-image-container {
-        margin-bottom: 20px;
-        width: 100%;
-    }
+    .welcome-image-container { margin-bottom: 20px; width: 100%; }
     .welcome-image-container img {
         width: 100%;
         height: auto;
         border-radius: 17px;
-        display: block;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
-
-    .flecha-container {
-        margin: 20px 0;
-        width: 60px;
-    }
-    .flecha-container img {
-        width: 100%;
-        height: auto;
-    }
-
+    .flecha-container { margin: 20px 0; width: 60px; }
+    .flecha-container img { width: 100%; height: auto; }
     .text-rectangle {
         background-color: #f3f0f0;
         border-radius: 10px;
         padding: 15px;
         margin-bottom: 10px;
-        text-align: center;
         color: black;
         width: 100%;
         box-sizing: border-box;
-    }
-
-    .text-rectangle.large {
-        font-size: 23pt;
+        font-size: 20pt;
         font-weight: bold;
     }
-
     .download-button {
         display: inline-block;
         background-color: #25D366;
@@ -81,24 +57,16 @@
         border-radius: 50px;
         font-size: 18px;
         font-weight: bold;
-        text-align: center;
         width: 90%;
         max-width: 400px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-        margin-top: 10px;
-        transition: transform 0.2s;
-        border: none;
-        cursor: pointer;
         animation: pulse-animation 2s infinite;
     }
-
     @keyframes pulse-animation {
         0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
         70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
         100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
     }
-
-    .download-button:hover { background-color: #1eb956; }
 </style>
 </head>
 <body>
@@ -108,15 +76,15 @@
         <img src="images/pagina-de-obsequios-blusas.jpg" alt="Obsequios Blusas">
     </div>
 
-    <div class="text-rectangle large">
+    <div class="text-rectangle">
         🎁 Descarga tus obsequios por tu participación
     </div>
 
     <div class="flecha-container">
-        <img src="images/flechita-hacia-abajo.png" alt="Flecha">
+        <img src="images/flechita-abajo.png" alt="Flecha">
     </div>
 
-    <a href="AQUÍ_VA_TU_ENLACE" class="download-button">
+    <a href="TU_LINK_AQUÍ" class="download-button">
         TOCA PARA DESCARGAR TUS OBSEQUIOS
     </a>
 </div>
